@@ -1,4 +1,4 @@
-#API usando Flask
+# API usando Flask
 
 Demonstração simples sobre a utilização do Flask para constituir uma API básica.
 
