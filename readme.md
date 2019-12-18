@@ -44,7 +44,8 @@ python app.py
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-O arquivo `requesting.py` possui duas requisições HTTP, um GET e um POST, para a url `http://127.0.0.1:5000/`.
+O arquivo `requesting.py` possui quatro requisições HTTP: um GET e um POST para a url `http://127.0.0.1:5000/`, e um
+GET e um POST para a url `http://127.0.0.1:5000/1` (final customizado).
 
 ```
 Terminal 2:
@@ -65,8 +66,17 @@ python app.py
  * Debug mode: off
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
+127.0.0.1 - - [18/Dec/2019 16:52:58] "GET / HTTP/1.1" 200 -
 GET request
-127.0.0.1 - - [18/Dec/2019 16:38:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Dec/2019 16:53:03] "POST / HTTP/1.1" 200 -
 POST request
-127.0.0.1 - - [18/Dec/2019 16:38:11] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Dec/2019 16:53:08] "GET /1 HTTP/1.1" 200 -
+GET response on /1
+127.0.0.1 - - [18/Dec/2019 16:53:13] "POST /1 HTTP/1.1" 200 -
+POST response on /1
 ```
+
+#### Mais informações
+
+- [Flask](https://www.palletsprojects.com/p/flask/)
+- [Requests](https://requests.readthedocs.io/pt_BR/latest/user/quickstart.html)
